@@ -29,6 +29,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents
+    byebug
     self.notes.map { |note| note.content}
   end
 end
